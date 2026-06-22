@@ -47,11 +47,11 @@ body{
 
     border-radius: 45px;
 
-    background-color: rgba(0, 0, 0, 0.577);
+    background-color: rgba(0, 0, 0, 0.926);
 
     display: grid;
     grid-template-columns: 200px 1fr;
-
+    margin: 15px;
     grid-template-areas: 
     "title links";
 
