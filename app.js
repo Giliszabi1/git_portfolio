@@ -12,11 +12,6 @@ var canvasHeight = canvas.height
 
 const maxRadius = 35
 
-canvas.onmousemove = function(e) {
-    mouseX = e.clientX
-    mouseY = e.clientY
-}
-
 window.addEventListener('resize', function() {
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight

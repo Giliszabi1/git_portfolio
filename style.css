@@ -7,7 +7,8 @@
     margin: 0px;
     padding: 0px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    transition: all 1s;
+    transition: all 0.6s;
+    scroll-behavior: smooth;
 }
 
 *::selection{
@@ -109,6 +110,10 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.2s;
+}
+.frondDevGraphs:hover{
+    transform: scale(1.1) translateY(-15px);
 }
 
 .programingLanguages{
@@ -140,6 +145,9 @@ a{
 .home:hover{
     transform:scale(1.1);
 }
+.home h1{
+    background-color: rgba(112, 164, 147, 0.449);
+}
 .home h1::first-letter{
     font-size: 108px;
     background-color: aquamarine;
@@ -154,7 +162,9 @@ a{
 }
 
 .aboutMe{
+    
     height: auto;
+    margin-top: 200px !important;
     margin: 75px;
     background-color: rgba(0, 0, 0, 0.481);
     animation: infinite forwards pulse 5s;
