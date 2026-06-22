@@ -121,11 +121,11 @@ a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
-    min-height: 200px;
+    max-height:40vw;
 }
 
 .box{
-    background-size: 75%;
+    background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
     background-clip: border-box;
