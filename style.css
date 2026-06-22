@@ -167,6 +167,7 @@ a{
     height: auto;
     margin-top: 200px !important;
     margin: 75px;
+    margin-bottom: 125px !important;
     background-color: rgba(0, 0, 0, 0.481);
     animation: infinite forwards pulse 5s;
 
@@ -211,8 +212,39 @@ footer{
     background-color: rgba(244, 140, 65, 0.66);
     padding: 25px;
     text-align: center;
+    
 }
 
+
+.hover-underline {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.leftContainer{
+    transition: all 0.2s;
+}
+.leftContainer h1:hover{
+    transform: scale(1.1);
+}
 
 @media screen and (max-width: 1120px) {
     
