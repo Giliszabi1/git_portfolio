@@ -1,5 +1,5 @@
 :root{
-
+    --font_color: white;
 }
 
 *{
@@ -14,4 +14,59 @@
 
 body{
     min-height: 100vh;
+    color: var(--font_color);
+    background-color: rgb(255, 200, 97);
+}
+
+.navbarContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    min-width: 500px;
+    max-width: 1000px;
+    width: 70%;
+
+    margin-top: 20px;
+
+    border-radius: 45px;
+
+    background-color: rgba(0, 0, 0, 0.348);
+
+    display: grid;
+    grid-template-columns: 200px 1fr;
+
+    grid-template-areas: 
+    "title links";
+
+}
+
+
+h1{
+    display: inline-block;
+    width: 200px;
+    margin: 25px;
+}
+
+.navElements{
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    margin-left: auto;
+}
+
+ul{
+    display: inline-block;
+}
+
+li{
+    display: inline-block;
+    margin-right: 30px;
+}
+a{
+    color: var(--font_color);
+    text-decoration: none;
+    font-size: 24px;
 }
