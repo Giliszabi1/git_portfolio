@@ -18,8 +18,20 @@ body{
     background-color: rgb(255, 200, 97);
 }
 
+#myCanvas{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    z-index: -1;
+}
+
 .navbarContainer{
     display: flex;
+    position: sticky;
+    top: 0;
     justify-content: center;
     align-items: center;
 }
@@ -33,7 +45,7 @@ body{
 
     border-radius: 45px;
 
-    background-color: rgba(0, 0, 0, 0.348);
+    background-color: rgba(0, 0, 0, 0.577);
 
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -73,7 +85,7 @@ a{
 .hero{
     display: flex;
     height: 600px;
-    margin: 10px;
+    margin: 25px;
 }
 
 .gridLayout{
