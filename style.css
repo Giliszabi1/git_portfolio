@@ -18,7 +18,8 @@
 body{
     min-height: 100vh;
     color: var(--font_color);
-    background-color: rgb(255, 200, 97);
+    /*background-color: rgb(255, 200, 97);*/
+    background: radial-gradient(circle 50vw at top,  rgb(255, 255, 97),rgb(255, 200, 97));
 }
 
 #myCanvas{
@@ -183,6 +184,7 @@ a{
     margin: 25px;
 }
 .skills ul li{
+    display: block;
     list-style: none;
     text-align: center;
     font-size: clamp(12px, 2vw, 32px);
@@ -265,7 +267,7 @@ footer{
         min-height: 400px;
     }
     .programingLanguages div{
-        background-color: rgba(0, 0, 0, 0.444);
+        background-color: rgba(239, 220, 46, 0.444);
     }
     .hero{
         display: flex;
