@@ -157,7 +157,7 @@ a{
 .skills ul li{
     list-style: none;
     text-align: center;
-    font-size: 26px;
+    font-size: clamp(12px, 2vw, 32px);
 }
 
 .mySection{
@@ -198,4 +198,26 @@ a{
         height: auto;
         margin: 25px;
     }
+}
+
+@media screen and (max-width: 600px) {
+    
+    .aboutMe{
+        background-color: rgba(0, 0, 0, 0.481);
+
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 0.5fr;
+        grid-template-areas: "mySection"
+        "skills"
+        ;
+    }
+
+    .mySection{
+        grid-area: mySection;
+    }
+    .skills{
+        grid-area: skills;
+    }
+    
 }

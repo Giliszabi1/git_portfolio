@@ -7,8 +7,8 @@ let mouseY
 canvas.height = window.innerHeight
 canvas.width = window.innerWidth
 
-const canvasWidth = canvas.width
-const canvasHeight = canvas.height
+var canvasWidth = canvas.width
+var canvasHeight = canvas.height
 
 const maxRadius = 35
 
@@ -20,6 +20,9 @@ canvas.onmousemove = function(e) {
 window.addEventListener('resize', function() {
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
+
+    canvasWidth = canvas.width
+    canvasHeight = canvas.height
 })
 
 function Circle(xCoordinate, yCoordinate, radius) {
